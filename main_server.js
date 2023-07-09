@@ -8,7 +8,7 @@ const encrypt=require("mongoose-encryption");
 app.set('view engine', 'ejs');
 //const alert=require("alert");
 //const popup=require("popups");
-mongoose.connect("mongodb://0.0.0.0:27017/signup");
+mongoose.connect("mongodb+srv://codedsoul58:Test123@cluster0.df2romh.mongodb.net/signup");
 const signupSchema=new mongoose.Schema({
     user: String,
     passnew: String
