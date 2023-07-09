@@ -1,0 +1,28 @@
+body
+{
+ background-color: rgb(2, 18, 18)!important;
+}
+.container1
+{   position:relative;
+    top:70px;
+    width:40%!important;
+    margin:20px;
+}
+.container2
+{
+    position:relative;
+    left:43%;
+}
+.bt1
+{
+    position:relative;
+    left:45%;
+    bottom:10%;
+}
+.f1
+{
+    position:relative;
+    top:40px;
+    width:50%;
+    left:30%;
+}

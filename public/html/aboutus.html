@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <script>
+    var i = 0;
+	var a3 = $('#a3');
+	var a4 = $('#a4');
+	var a5 = $('#a5');
+	var a8 = $('#a8');
+	var f2 = $('#f2');
+	var f1 = $('#f1');
+	var f5 = $('#f5');
+
+	for (i = 1; i < 11; i++) {      
+		a3.append('<span class=a3'+i+'></span>');
+		$('.a3'+i+'').css({
+			'-webkit-animation' : 'a3 1s '+(Math.random()*2)+'s  infinite',
+			'-moz-animation' : 'a3 1s '+(Math.random()*2)+'s  infinite'
+		}); 
+	}
+	setInterval(function() {
+		$('#a3 span').each(function() {
+    		$(this).text(Math.ceil(Math.random()*999));;
+		});
+	}, 100); 
+	
+	for (i = 1; i < 31; i++) {      
+		a4.append('<span class=a3'+i+'></span>');
+		setInterval(function() {
+			$('#a4 span').each(function() {
+				$(this).width((Math.random()*15));
+			});
+		}, 500);		
+	}
+	
+	for (i = 1; i < 16; i++) {      
+		a5.append('<span><b class=a5'+i+'></b></span>');
+		$('.a5'+i+'').css({
+			'-webkit-animation' : 'a3 1s 0.'+i+'s  infinite',
+			'-moz-animation' : 'a3 1s 0.'+i+'s  infinite'
+		}); 		
+	}
+	
+	setInterval(function() {
+		var h = Math.ceil(Math.random()*24);
+		var m = Math.ceil(Math.random()*60);
+		if (h<10) {$('.a731').text('0'+h+':');}
+		else {$('.a731').text(h+':');}
+		if (m<10) {$('.a732').text('0'+m);}
+		else {$('.a732').text(m);}		
+	}, 100);
+	
+	setInterval(function() {
+		var d = Math.ceil(Math.random()*30);
+		var m = Math.ceil(Math.random()*12);
+		var min = 1700, max = 1999;
+		var rand = min - 0.5 + Math.random()*(max-min+1)
+		rand = Math.round(rand);
+
+		if (d<10) {$('.a741').text('0'+d+'/');}
+		else {$('.a741').text(d+'/');}
+		if (m<10) {$('.a742').text('0'+m+'/');}
+		else {$('.a742').text(m+'/');}	
+		$('.a743').text(rand);	
+	}, 50);	
+	
+	for (i = 1; i < 41; i++) {      
+		a8.append('<span></span>');	
+	}
+	
+	setInterval(function() {
+		var mino = 10000, maxo = 99999;
+		var rand = mino - 0.5 + Math.random()*(maxo-mino+1);
+		rand = Math.round(rand);
+		
+		var mine = 100000000, maxe = 999999999;		
+		var ran = mine - 0.5 + Math.random()*(maxe-mine+1);
+		ran = Math.round(ran);		
+		
+		$('#a9 span:odd').text(rand);
+		$('#a9 span:even').text(ran);		
+
+	}, 100); 
+	
+	
+	for (i = 1; i < 37; i++) {      
+		f2.append('<span class=f2'+i+'></span>');
+		$('.f2'+i+'').css({
+			'-webkit-transform' : 'rotateZ('+i+'0deg) translateY(95px)'
+		}); 		
+	}
+	
+	for (i = 1; i < 19; i++) {      
+		f5.append('<span class=f5'+i+'><b>'+Math.random()*30+'</b></span>');
+		$('.f5'+i+'').css({
+			'-webkit-transform' : 'rotateZ('+i*2+'0deg) translateY(40px)'
+		}); 		
+	}	
+	
+	for (i = 1; i < 13; i++) {      
+		f1.append('<span class=f1'+i+'></span>');
+		$('.f1'+i+'').css({
+			'-webkit-transform' : 'rotateZ('+i*30+'deg) translateY(91px)'
+		}); 		
+	}
+    </script>
+    <div class="flex-container">
+        <div class="first"><img src="self_aboutus.jpg" style="height:180px;width:190px;position:relative;left:53px;top:30px;"></div>
+        <div class="second"><h4><strong>About Us</strong></h4><p class="aboutp"><em><strong>At Cybathon we are dedicated towards providing the best security engineering training and services. We believe in continual improvement and learning to taste the heights of success</strong></em></p></div>
+        </div>
+        <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+<div id="container">
+	<div id="a1">   <div id="a11"></div>   </div>
+    <div id="a2">   <div id="a21"></div>   </div>
+    <div id="a3"></div>
+    <div id="a4"></div>
+    <div id="a5"></div>
+    <div id="a6">Cybathon</div>
+    <div id="a7">
+    	<span id="a71">@Cy.ai</span>   
+    	<span id="a73">
+        	<b class="a731">20</b>
+            <b class="a732">23</b>
+        </span>
+    	<span id="a74">
+        	<b class="a741">26/</b>
+            <b class="a742">03/</b>
+            <b class="a743">2023</b>
+        </span>        
+        <span id="a76">Cyber Security</span>
+    </div>
+    <div id="a8">
+    	<div id="a81"></div>   
+    </div>
+    <div id="a9">
+    	<span>12456</span>:
+        <span>123456789</span>.
+        <span>12456</span>:
+        <span>123456789</span>&nbsp;
+        <span>12456</span>
+    </div>
+    <div id="a10">
+    	Live Networks
+        <span></span>
+    </div>
+    <div id="b1">
+    	<span class="b11"></span>
+        <span class="b12"></span>
+        <span class="b13"></span>
+        <span class="b14"></span>
+        <span class="b15"></span>
+        <span class="b16"></span>
+        <span class="b17"></span>
+        <span class="b18"></span>
+        <span class="b19"></span>
+        <span class="b110"></span>
+    </div>
+    <div id="figure">
+    
+        <div id="a7">
+            <span id="a71">@Cy.ai</span>   
+            <span id="a73">
+                <b class="a731">20</b>
+                <b class="a732">23</b>
+            </span>
+            <span id="a74">
+                <b class="a741">26/</b>
+                <b class="a742">03/</b>
+                <b class="a743">2023</b>
+            </span>        
+            <span id="a76">Live Networks</span>
+        </div>
+        
+    	<div id="f1"></div>        
+    	<div id="f2"></div>
+                
+		<div id="f3">
+        	<div id="f31">   <span class="f311"><b></b></span>   <span class="f312"><b></b></span>   </div>
+            <div id="f32">   <span class="f321"></span>   <span class="f322"></span>   </div>
+            <div id="f33"></div>
+            <div id="f34"></div>
+        </div>
+        
+        <div id="f4">
+        	<div id="f41"></div>
+            <div id="f42"></div>
+            <div id="f43" class="f431"></div>
+            <div id="f43" class="f432"></div>
+            <div id="f43" class="f433"></div>
+            <div id="f43" class="f434"></div>
+        </div>
+        
+        <div id="f5"></div>
+        
+        <div id="f6"></div>  
+        <div id="f7">
+        	<div id="f71"></div>
+            <div id="f72"></div>
+        </div>
+        <div id="f8">
+        	<div id="f81"></div>
+            <div id="f82"></div>
+        </div>
+        <div id="f9">
+        	<span></span>
+        </div>        
+                
+    </div>
+</div>
+
+</body>
+</html>
