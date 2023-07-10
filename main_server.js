@@ -38,7 +38,7 @@ app.post("/signup",function(request,response){
         passnew: pass
     });
     newuser.save();
-    response.redirect("/signup");
+    response.redirect("/login");
 });
 app.post("/login",function(request,response){
     const u1=request.body.uname;
