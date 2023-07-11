@@ -16,3 +16,9 @@ To run the web app
     npm install mongoose-encryption
 
 Designed by Indranil Roy
+
+#Output
+![Cyb_1](https://github.com/CodedSoul/Cybathon/assets/139055679/8a00dc6b-d336-476a-901a-d4b94a779da9)
+![Cyb_2](https://github.com/CodedSoul/Cybathon/assets/139055679/c9a3c168-9708-4dd8-b1d7-75e8efe19649)
+![Cyb_3](https://github.com/CodedSoul/Cybathon/assets/139055679/f3209473-4c07-4ea2-b231-88d2dc0fa348)
+![Cyb_4](https://github.com/CodedSoul/Cybathon/assets/139055679/dc612005-137e-4747-b14d-2a95f316f1b6)
